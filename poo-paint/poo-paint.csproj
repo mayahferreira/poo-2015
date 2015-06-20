@@ -52,6 +52,8 @@
     <Compile Include="AreaDeDesenho.Designer.cs">
       <DependentUpon>AreaDeDesenho.cs</DependentUpon>
     </Compile>
+    <Compile Include="Circulo.cs" />
+    <Compile Include="Figura.cs" />
     <Compile Include="Retangulo.cs" />
     <Compile Include="Paint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

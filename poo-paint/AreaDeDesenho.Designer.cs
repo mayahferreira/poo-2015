@@ -32,12 +32,14 @@
             // 
             // AreaDeDesenho
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(282, 253);
             this.Name = "AreaDeDesenho";
             this.Text = "AreaDeDesenho";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Desenha);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DesenhaCliqueInicial);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.DesenhaCliqueFinal);
             this.ResumeLayout(false);
 
         }

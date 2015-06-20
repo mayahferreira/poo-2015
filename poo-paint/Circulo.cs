@@ -6,27 +6,24 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace poo_paint
-
 {
-    public class Retangulo : Figura
+    public class Circulo : Figura
     {
-        private int plargura;
-        private int paltura;
+        private int praio;
         static int pcontador;
 
-        public Retangulo(int x, int y, int largura, int altura)
+        public Circulo(int x, int y, int raio)
         {
             px = x;
             py = y;
-            plargura = largura;
-            paltura = altura;
+            praio = raio;
 
             pcontador += 1;
         }
 
         public override string Imprime()
         {
-            return "retangulo[x:" + px + ",y:" + py + ",l:" + plargura + ",a:" + paltura + "]";
+            return "circulo[x:" + px + ",y:" + py + ",raio:" + praio + "]";
         }
 
         public static void ZeraContador()
@@ -38,10 +35,10 @@ namespace poo_paint
         {
             return pcontador;
         }
-        
+
         public override void Desenha(Graphics g)
         {
-            g.DrawRectangle(Pens.Black, px, py, plargura, paltura);
+            g.DrawEllipse(Pens.Black, px, py, praio * 2, praio * 2);
         }
     }
 }
